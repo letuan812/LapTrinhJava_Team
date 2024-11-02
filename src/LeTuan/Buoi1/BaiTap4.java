@@ -1,4 +1,4 @@
-package Buoi1;
+package LeTuan.Buoi1;
 
 import java.util.Scanner;
 

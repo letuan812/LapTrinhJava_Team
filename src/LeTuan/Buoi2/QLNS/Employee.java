@@ -1,4 +1,4 @@
-package Buoi2.QLNS;
+package LeTuan.Buoi2.QLNS;
 
 public class Employee {
 //    Thuộc tính: id (mã nhân viên), name (tên nhân viên), salary (lương).

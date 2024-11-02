@@ -1,4 +1,4 @@
-package Buoi2.QLNS;
+package LeTuan.Buoi2.QLNS;
 
 public class Main {
     public static void main(String[] args) {

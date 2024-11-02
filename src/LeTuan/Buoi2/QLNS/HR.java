@@ -1,4 +1,4 @@
-package Buoi2.QLNS;
+package LeTuan.Buoi2.QLNS;
 
 import java.util.ArrayList;
 import java.util.List;

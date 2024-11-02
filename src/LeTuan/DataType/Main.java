@@ -1,4 +1,4 @@
-package DataType;
+package LeTuan.DataType;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Buoi2.QLSP;
+package LeTuan.Buoi2.QLSP;
 
 public class NonPerishableProduct extends Product {
     String warrantyPeriod;

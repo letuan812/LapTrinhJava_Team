@@ -1,4 +1,4 @@
-package DataType;
+package LeTuan.DataType;
 
 public class Array {
 

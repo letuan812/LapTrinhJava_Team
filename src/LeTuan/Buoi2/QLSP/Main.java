@@ -1,4 +1,4 @@
-package Buoi2.QLSP;
+package LeTuan.Buoi2.QLSP;
 
 import java.util.ArrayList;
 

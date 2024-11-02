@@ -1,22 +1,22 @@
-package Buoi3.Collection;
+package LeTuan.Buoi3.Collection;
 
 public class Student {
-    private int id;
+    private String id;
     private String name;
     private int age;
 
     // Constructor
-    public Student(int id, String name, int age) {
+    public Student(String id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
     }
 
-    public int getId() {
+    public String  getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
