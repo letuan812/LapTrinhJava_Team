@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class Main {
    public static List<Student> studentList = new ArrayList<>();
     public static void main(String[] args) {
-        System.out.println("**************xxxx");
+        System.out.println("**************x");
         System.out.println("Cau hoi 1. Them vao danh sach 3 sinh vien va in danh sach vua nhap");
-        System.out.println("**************xxxx");
+        System.out.println("**************x");
         cauHoi1( studentList);
 
         System.out.println("Cau hoi 2. Them vao sinh vien khi nhap tu ban phim va in danh sach sinh vien hien co");
