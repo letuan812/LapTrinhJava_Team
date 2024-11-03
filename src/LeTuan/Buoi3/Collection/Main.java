@@ -2,6 +2,7 @@ package LeTuan.Buoi3.Collection;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 
@@ -60,11 +61,10 @@ private static void cauHoi1(List<Student> stLst){
         String  id;
         String  name;
         int  age ;
-        String yesNo="Y";
+        char yesNo;
         Student student = new Student("null","null",-1);
-
-
-        while (yesNo=="Y" || yesNo=="y"  ){
+        yesNo = 'Y';
+        while (yesNo =='Y'|| yesNo=='y') {
 
             System.out.print("Nhap ma sv: ");
             student.setId(scanner.nextLine());
@@ -72,14 +72,15 @@ private static void cauHoi1(List<Student> stLst){
             student.setName(scanner.nextLine());
             System.out.print("Nhap Tuoi sv: ");
             student.setAge(scanner.nextInt());
+            scanner.nextLine();
 
-            System.out.print("Ban muon nhap tiep khong? (Y/N) ");
-            yesNo = scanner.nextLine();
+//            System.out.print("Ban muon nhap tiep khong? (Y/N) ");
+//            yesNo = scanner.nextLine();
 
             stLst.add(student);
 
-//            System.out.print("Ban muon nhap tiep khong? (Y/N) ");
-//            yesNo=scanner.nextLine();
+            System.out.print("Ban muon nhap tiep khong? (Y/N) ");
+            yesNo= scanner.nextLine().charAt(0);
 
         }
 
