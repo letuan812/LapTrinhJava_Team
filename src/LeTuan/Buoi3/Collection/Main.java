@@ -2,15 +2,16 @@ package LeTuan.Buoi3.Collection;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 
 public class Main {
    public static List<Student> studentList = new ArrayList<>();
     public static void main(String[] args) {
-        System.out.println("**************");
+        System.out.println("**************xxxx");
         System.out.println("Cau hoi 1. Them vao danh sach 3 sinh vien va in danh sach vua nhap");
-        System.out.println("**************");
+        System.out.println("**************xxxx");
         cauHoi1( studentList);
 
         System.out.println("Cau hoi 2. Them vao sinh vien khi nhap tu ban phim va in danh sach sinh vien hien co");
@@ -60,11 +61,10 @@ private static void cauHoi1(List<Student> stLst){
         String  id;
         String  name;
         int  age ;
-        String yesNo="Y";
+        char yesNo;
         Student student = new Student("null","null",-1);
-
-
-        while (yesNo=="Y" || yesNo=="y"  ){
+        yesNo = 'Y';
+        while (yesNo =='Y'|| yesNo=='y') {
 
             System.out.print("Nhap ma sv: ");
             student.setId(scanner.nextLine());
@@ -72,14 +72,15 @@ private static void cauHoi1(List<Student> stLst){
             student.setName(scanner.nextLine());
             System.out.print("Nhap Tuoi sv: ");
             student.setAge(scanner.nextInt());
+            scanner.nextLine();
 
-            System.out.print("Ban muon nhap tiep khong? (Y/N) ");
-            yesNo = scanner.nextLine();
+//            System.out.print("Ban muon nhap tiep khong? (Y/N) ");
+//            yesNo = scanner.nextLine();
 
             stLst.add(student);
 
-//            System.out.print("Ban muon nhap tiep khong? (Y/N) ");
-//            yesNo=scanner.nextLine();
+            System.out.print("Ban muon nhap tiep khong? (Y/N) ");
+            yesNo= scanner.nextLine().charAt(0);
 
         }
 
