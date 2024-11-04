@@ -1,12 +1,15 @@
 package LeTuan.Buoi3.BaiTapTongHop1;
 
 public class Rectangle extends Shape{
-    double width;
-    double height;
+    private double width;
+    private double height;
 
     public Rectangle(double width, double height) {
-        this.width = width;
-        this.height = height;
+        //Kiem tr du lieu khoi tao
+        setWidth(width);
+        setHeight(height);
+//        this.width = width;
+//        this.height = height;
     }
 
 
@@ -16,6 +19,7 @@ public class Rectangle extends Shape{
     }
 
     public void setWidth(double width) {
+        if (width<=0) return;
         this.width = width;
     }
 
@@ -24,16 +28,17 @@ public class Rectangle extends Shape{
     }
 
     public void setHeight(double height) {
+        if (height<=0) return;
         this.height = height;
     }
 
     @Override
-    void calculateArea() {
-
+    public double  calculateArea() {
+        return this.width * this.height;
     }
 
     @Override
-    void calculatePerimeter() {
-
+    double calculatePerimeter() {
+        return (this.height + this.width)*2;
     }
 }
