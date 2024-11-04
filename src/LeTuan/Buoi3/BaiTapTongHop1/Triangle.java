@@ -1,7 +1,7 @@
 package LeTuan.Buoi3.BaiTapTongHop1;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltMath.highest;
-import static com.sun.org.apache.xalan.internal.lib.ExsltMath.sqrt;
+
+import static java.lang.Math.sqrt;
 
 public class Triangle extends Shape{
     double base;
@@ -41,7 +41,7 @@ public class Triangle extends Shape{
     @Override
     double calculatePerimeter() {
         //Tinh huong tim chu vi tam gia vuong;
-        double hypotenuse = sqrt(square(height) + square(base) );
+        double hypotenuse = sqrt( Math.pow(height,2) + Math.pow(base,2) );
 
         return base + height + hypotenuse;
     }
