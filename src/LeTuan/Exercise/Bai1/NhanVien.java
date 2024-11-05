@@ -155,7 +155,7 @@ public class NhanVien {
 
     public void HienThiThongTin(boolean tieuDe) {
         if (tieuDe) {
-            System.out.printf("%-10s %-30s %-10s %12s %-10s %-30s %-20s %-15s %-20s %-10d",
+            System.out.printf("%-10s %-30s %-10s %12s %-10s %-30s %-20s %-15s %-20s %-10s",
                     printCentered2("Mã NV", 10), "Họ", "Tên", "Ngay Sinh", "Gioi tinh", "Dia chi", "Email", "So DT", "Phong Ban", "Luong");
         }
 
@@ -163,7 +163,7 @@ public class NhanVien {
     }
 
     public void HienThiThongTin() {
-        System.out.printf("%-10s %-30s %-10s %12s %-10s %-30s %-20s %-15s %-20s %-10d",
+        System.out.printf("%-10s %-20s %-10s %12s %-10s %-20s %-20s %-12s %-20s %-10d",
                 printCentered2(this.id, 10), this.ho, this.ten, this.ngaySinh, gioiTinh, diaChi, email, soDienThoai, phongBan, luong);
     }
 }

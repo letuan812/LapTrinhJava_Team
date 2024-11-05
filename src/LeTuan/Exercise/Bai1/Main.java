@@ -13,7 +13,7 @@ public class Main {
         ChonChucNang();
         NhanVien nv;
         nv = ThemNhanVien();
-        nhanVienList.add(nv);
+        //nhanVienList.add(nv);
 
     }
 
@@ -75,7 +75,7 @@ public class Main {
         nhanVien.setSoDienThoai("So DT");
         nhanVien.setPhongBan("Phong Ban");
         nhanVien.setLuong(10000);
-        nhanVien.HienThiThongTin("1" = "1");
+        // nhanVien.HienThiThongTin("1" = "1");
         nhanVien.HienThiThongTin();
 
         return nhanVien;
