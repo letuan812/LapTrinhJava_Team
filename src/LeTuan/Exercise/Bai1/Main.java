@@ -28,7 +28,7 @@ public class Main {
             System.out.println("Vui long chon lai chuc nang: ");
             selectMenu = scanner.nextInt();
         }
-        
+
         switch (selectMenu) {
             case 1:
                 System.out.println("1.Thêm nhân viên");
