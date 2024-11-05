@@ -12,7 +12,7 @@ public class Student {
         this.age = age;
     }
 
-    public String  getId() {
+    public String getId() {
         return id;
     }
 

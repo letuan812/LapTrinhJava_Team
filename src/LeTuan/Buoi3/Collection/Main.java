@@ -2,17 +2,17 @@ package LeTuan.Buoi3.Collection;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Scanner;
 
 
 public class Main {
-   public static List<Student> studentList = new ArrayList<>();
+    public static List<Student> studentList = new ArrayList<>();
+
     public static void main(String[] args) {
         System.out.println("**************x");
         System.out.println("Cau hoi 1. Them vao danh sach 3 sinh vien va in danh sach vua nhap");
         System.out.println("**************x");
-        cauHoi1( studentList);
+        cauHoi1(studentList);
 
         System.out.println("Cau hoi 2. Them vao sinh vien khi nhap tu ban phim va in danh sach sinh vien hien co");
 
@@ -26,45 +26,45 @@ public class Main {
 
     }
 
-private static void cauHoi1(List<Student> stLst){
-    Student student1 = new Student("1", "Tuan1", 30);
-    Student student2 = new Student("2", "Tuan2", 32);
-    Student student3 = new Student("3", "Tuan3", 33);
+    private static void cauHoi1(List<Student> stLst) {
+        Student student1 = new Student("1", "Tuan1", 30);
+        Student student2 = new Student("2", "Tuan2", 32);
+        Student student3 = new Student("3", "Tuan3", 33);
 
 
-    stLst.add(student1);
-    stLst.add(student2);
-    stLst.add(student3);
+        stLst.add(student1);
+        stLst.add(student2);
+        stLst.add(student3);
 
-    if (stLst.isEmpty()) {
-        System.out.println("Danh sach rong");
+        if (stLst.isEmpty()) {
+            System.out.println("Danh sach rong");
 
-    } else {
-        System.out.println("DANH SACH...(v forEach)");
-        stLst.forEach(st -> {
-            st.display();
-                }
-        );
-        System.out.println("DANH SACH...(v2)");
-        for (Student std : stLst) {
-            std.display();
+        } else {
+            System.out.println("DANH SACH...(v forEach)");
+            stLst.forEach(st -> {
+                        st.display();
+                    }
+            );
+            System.out.println("DANH SACH...(v2)");
+            for (Student std : stLst) {
+                std.display();
+            }
+
+
         }
 
-
+        System.out.println();
     }
 
-    System.out.println();
-}
-
-    private static void cauHoi2NhapDS(List<Student> stLst){
-        Scanner  scanner = new Scanner(System.in);
-        String  id;
-        String  name;
-        int  age ;
+    private static void cauHoi2NhapDS(List<Student> stLst) {
+        Scanner scanner = new Scanner(System.in);
+        String id;
+        String name;
+        int age;
         char yesNo;
-        Student student = new Student("null","null",-1);
+        Student student = new Student("null", "null", -1);
         yesNo = 'Y';
-        while (yesNo =='Y'|| yesNo=='y') {
+        while (yesNo == 'Y' || yesNo == 'y') {
 
             System.out.print("Nhap ma sv: ");
             student.setId(scanner.nextLine());
@@ -80,13 +80,9 @@ private static void cauHoi1(List<Student> stLst){
             stLst.add(student);
 
             System.out.print("Ban muon nhap tiep khong? (Y/N) ");
-            yesNo= scanner.nextLine().charAt(0);
+            yesNo = scanner.nextLine().charAt(0);
 
         }
-
-
-
-
 
 
     }

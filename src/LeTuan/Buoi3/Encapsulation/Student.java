@@ -1,7 +1,7 @@
 package LeTuan.Buoi3.Encapsulation;
 
 public class Student {
-   private String id;
+    private String id;
     private String name;
     private int age;
     private int grade;
@@ -59,6 +59,6 @@ public class Student {
     public void displayInfo() {
 
         System.out.println("Thong tin SV:\nMa SV: " + id + "\nHo va ten: "
-                + this.name + "\nTuoi: " +  age + "\nDiem: " + this.grade);
+                + this.name + "\nTuoi: " + age + "\nDiem: " + this.grade);
     }
 }

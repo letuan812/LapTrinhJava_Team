@@ -1,6 +1,6 @@
 package LeTuan.Buoi3.BaiTapTongHop1;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     private double width;
     private double height;
 
@@ -12,14 +12,12 @@ public class Rectangle extends Shape{
 //        this.height = height;
     }
 
-
-
     public double getWidth() {
         return width;
     }
 
     public void setWidth(double width) {
-        if (width<=0) return;
+        if (width <= 0) return;
         this.width = width;
     }
 
@@ -28,17 +26,17 @@ public class Rectangle extends Shape{
     }
 
     public void setHeight(double height) {
-        if (height<=0) return;
+        if (height <= 0) return;
         this.height = height;
     }
 
     @Override
-    public double  calculateArea() {
+    public double calculateArea() {
         return this.width * this.height;
     }
 
     @Override
     double calculatePerimeter() {
-        return (this.height + this.width)*2;
+        return (this.height + this.width) * 2;
     }
 }

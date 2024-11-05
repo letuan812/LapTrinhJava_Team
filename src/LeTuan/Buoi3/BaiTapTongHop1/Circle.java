@@ -1,10 +1,9 @@
 package LeTuan.Buoi3.BaiTapTongHop1;
 
-import java.lang.Math;
-
-public class Circle extends Shape{
+public class Circle extends Shape {
+    private final double pi = 3.14159;
     private double radius;
-private double pi = 3.14159;
+
     public Circle(double radius) {
 
         this.radius = radius;
@@ -21,11 +20,12 @@ private double pi = 3.14159;
 
     @Override
     public double calculateArea() {
-        return pi * Math.pow(radius,2);
+        return pi * Math.pow(radius, 2);
     }
 
     @Override
     double calculatePerimeter() {
-        return 2*pi*  radius;
+        return 2 * pi * radius;
     }
+
 }
