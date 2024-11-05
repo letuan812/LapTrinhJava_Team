@@ -1,9 +1,10 @@
 package LeTuan.Buoi3.BaiTapTongHop1;
 
-public class Circle extends Shape {
-    private final double pi = 3.14159;
-    private double radius;
+import java.lang.Math;
 
+public class Circle extends Shape{
+    private double radius;
+private double pi = 3.14159;
     public Circle(double radius) {
 
         this.radius = radius;

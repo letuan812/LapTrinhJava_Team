@@ -1,12 +1,19 @@
 package LeTuan.Exercise.Bai1;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+    public List<NhanVien> nhanVienList = new ArrayList<>();
+
     public static void main(String[] args) {
         System.out.println("Bai tap 1.\n https://github.com/letuan812/LapTrinhJava_Team/tree/276c556f8c8c30572ba8e61802750e3e20d70dc2/src/Exercise");
         // MainMenu();
         ChonChucNang();
+        NhanVien nv;
+        nv = ThemNhanVien();
+        nhanVienList.add(nv);
 
     }
 
@@ -52,6 +59,35 @@ public class Main {
 
         }
 
+
+    }
+
+    public static NhanVien ThemNhanVien() {
+        NhanVien nhanVien = new NhanVien();
+
+        nhanVien.setId("01");
+        nhanVien.setHo("Họ");
+        nhanVien.setTen("Tên");
+        nhanVien.setNgaySinh("Ngay Sinh");
+        nhanVien.setGioiTinh("Gioi tinh");
+        nhanVien.setDiaChi("Dia chi");
+        nhanVien.setEmail("Email");
+        nhanVien.setSoDienThoai("So DT");
+        nhanVien.setPhongBan("Phong Ban");
+        nhanVien.setLuong(10000);
+        nhanVien.HienThiThongTin("1" = "1");
+        nhanVien.HienThiThongTin();
+
+        return nhanVien;
+
+    }
+
+    public void InDSNhanVien(List<NhanVien> nvList) {
+
+        for (NhanVien nv : nvList) {
+            System.out.println(nv.getDiaChi());
+
+        }
 
     }
 }
