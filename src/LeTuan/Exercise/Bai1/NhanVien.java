@@ -153,17 +153,18 @@ public class NhanVien {
         this.luong = luong;
     }
 
-    public void HienThiThongTin(boolean tieuDe) {
-        if (tieuDe) {
-            System.out.printf("%-10s %-30s %-10s %12s %-10s %-30s %-20s %-15s %-20s %-10s",
-                    printCentered2("Mã NV", 10), "Họ", "Tên", "Ngay Sinh", "Gioi tinh", "Dia chi", "Email", "So DT", "Phong Ban", "Luong");
-        }
+    public void HienThiThongTinTieuDe() {
+
+        System.out.printf("%-10s %-20s %-10s %-15s %-15s %-25s %-20s %-15s %-20s %-10s",
+                printCentered2("Mã NV", 10), "Họ", "Tên", "Ngay Sinh", "Gioi tinh", "Dia chi", "Email", "So DT", "Phong Ban", "Luong");
+        System.out.println();
 
 
     }
 
     public void HienThiThongTin() {
-        System.out.printf("%-10s %-20s %-10s %12s %-10s %-20s %-20s %-12s %-20s %-10d",
+        System.out.printf("%-10s %-20s %-10s %-15s %-15s %-25s %-20s %-15s %-20s %-10.0f",
                 printCentered2(this.id, 10), this.ho, this.ten, this.ngaySinh, gioiTinh, diaChi, email, soDienThoai, phongBan, luong);
+        System.out.println();
     }
 }
