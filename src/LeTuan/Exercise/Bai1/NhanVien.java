@@ -1,5 +1,9 @@
 package LeTuan.Exercise.Bai1;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+
 public class NhanVien {
     private String id;
     private String ten;
@@ -53,6 +57,21 @@ public class NhanVien {
         if (text.length() % 2 != 0) {
             System.out.print(" ");
         }
+    }
+
+
+    private static void fnMenu() {
+        System.out.println("CHUC NANG CAP NHAT THONG TIN NHAN VIEN");
+        System.out.println(" 1.Mã NV\n" +
+                " 2.Họ và Tên\n" +
+                " 3.Ngay Sinh\n" +
+                " 4.Gioi tinh\n" +
+                " 5.Dia chi\n" +
+                " 6.Email\n" +
+                " 7.So DT\n" +
+                " 8.Phong Ban\n" +
+                " 9.Luong \n" +
+                "#. Kết thúc");
     }
 
     public String printCentered2(String text, int width) {
@@ -166,5 +185,36 @@ public class NhanVien {
         System.out.printf("%-10s %-20s %-10s %-15s %-15s %-25s %-20s %-15s %-20s %-10.0f",
                 printCentered2(this.id, 10), this.ho, this.ten, this.ngaySinh, gioiTinh, diaChi, email, soDienThoai, phongBan, luong);
         System.out.println();
+    }
+
+    public void CapNhatThongTinNV(NhanVien nhanVien) {
+        int colData;
+        //Set<char> setFunc = new HashSet<>();
+        HashSet<Character> setFunc = new HashSet<>();
+
+        setFunc.addAll(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "#"));
+
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("CHON NOI DUNG CAN CAP NHAT");
+        colData = scanner.nextInt();
+
+        while (setFunc.contains(colData)) {
+            System.out.println("Vui long chon lai chuc nang: ");
+            colData = scanner.nextInt();
+        }
+
+        switch (colData) {
+            case 1:
+                System.out.println("Chon 1");
+                break;
+            case 2:
+                System.out.println("Chon 1");
+                break;
+
+        }
+
     }
 }
