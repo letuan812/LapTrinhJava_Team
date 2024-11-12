@@ -16,6 +16,7 @@ public class NhanVien {
     private String phongBan;
     private double luong;
 
+
     public NhanVien() {
     }
 
@@ -190,7 +191,7 @@ public class NhanVien {
     public void CapNhatThongTinNV(NhanVien nhanVien) {
         int colData;
         //Set<char> setFunc = new HashSet<>();
-        HashSet<Character> setFunc = new HashSet<>();
+        HashSet<String> setFunc = new HashSet<>();
 
         setFunc.addAll(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "#"));
 
