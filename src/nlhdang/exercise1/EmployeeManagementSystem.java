@@ -1,4 +1,6 @@
-package nlhdang;
+package nlhdang.exercise1;
+
+
 
 public class EmployeeManagementSystem {
     public static void main(String[] args) {

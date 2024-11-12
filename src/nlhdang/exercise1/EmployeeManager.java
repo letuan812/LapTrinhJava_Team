@@ -1,4 +1,4 @@
-package nlhdang;
+package nlhdang.exercise1;
 
 import java.util.ArrayList;
 import java.util.Comparator;

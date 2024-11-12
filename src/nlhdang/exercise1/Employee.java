@@ -1,4 +1,4 @@
-package nlhdang;
+package nlhdang.exercise1;
 
 public class Employee {
     private int id;

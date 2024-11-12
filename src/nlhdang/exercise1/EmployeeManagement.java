@@ -1,4 +1,4 @@
-package nlhdang;
+package nlhdang.exercise1;
 
 public interface EmployeeManagement {
     void addEmployee(Employee employee);
