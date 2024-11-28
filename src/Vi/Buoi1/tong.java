@@ -1,0 +1,14 @@
+package Buoi1;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class tong {
+    public static void main(String[] args) {
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+       // System.out.printf("Hello and welcome!");
+        int a=1, b=2, c=3;
+        int sum=a+b+c;
+        System.out.println("Tong 3 bien:"+ sum); //sout
+        }
+    }
